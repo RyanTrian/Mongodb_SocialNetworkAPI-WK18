@@ -7,7 +7,7 @@
 
 ## Description 📃
 
-
+A social network API, created using a NOQSL database, mongodb. User can create their account, update their username or email, add or remove friend from friend list, and delete their account. Users can create thoughts, which other user can react to, thought and reaction can also be changed or removed.
 
 ## Screenshot 📷
 
@@ -27,7 +27,7 @@ npm i
 ```
 
 ## Usage 
-Seeding the database:
+Seeding the database: (Coming Soon)
 
 ```console
 npm run seed
@@ -40,7 +40,8 @@ npm run start
 
 ## Dependencies 📦
 
-*
+* Express
+* Mongoose
   
 ## License 🔑
 
