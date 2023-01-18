@@ -26,13 +26,18 @@ const ThoughtSchema = new Schema(
       virtuals: true,
       getters: true,
     },
+    id: false,
   },
 );
 
 ThoughtSchema
   .virtual("reactionCount")
   .get( function () {
-    return this.reactions.length;
+    if (this.reactions) {
+      return this.reactions.length;
+    } else {
+      return 0;
+    }
   })
 
 const Thought = model("Thought", ThoughtSchema);
